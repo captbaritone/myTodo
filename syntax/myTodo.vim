@@ -24,15 +24,15 @@ syn match Comment "^\s*[cx] .*$"
 syn match Ignore "^\s*w .*$"
 
 " Map Leader+c to mark an action as cancled
-nnoremap <leader>c 0wic <C-R>=strftime("%Y-%m-%d %T")<CR> <ESC>0
+nnoremap <leader>tc 0wic <C-R>=strftime("%Y-%m-%d %T")<CR> <ESC>0
 
 " Map Leader+x to mark an action as complete
-nnoremap <leader>x 0wix <C-R>=strftime("%Y-%m-%d %T")<CR> <ESC>0
+nnoremap <leader>tx 0wix <C-R>=strftime("%Y-%m-%d %T")<CR> <ESC>0
 
 " Beta commands to move a node up or down
 " Currently it's very borken. Can only move root level projects
-nnoremap <leader>u ?\v^\s{1,7}\+<CR>v/\v^\s{1,7}\+<CR>k$d?\v^\s{1,7}\+<CR>P:noh<cr>
-nnoremap <leader>d ?\v^\s{1,7}\+<CR>v/\v^\s{1,7}\+<CR>k$d/\v^\s{1,7}\+<CR>P:noh<cr>
+nnoremap <leader>tu ?\v^\s{1,7}\+<CR>v/\v^\s{1,7}\+<CR>k$d?\v^\s{1,7}\+<CR>P:noh<cr>
+nnoremap <leader>td ?\v^\s{1,7}\+<CR>v/\v^\s{1,7}\+<CR>k$d/\v^\s{1,7}\+<CR>P:noh<cr>
 
 
 let b:current_syntax = "myTodo"
